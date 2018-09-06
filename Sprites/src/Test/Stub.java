@@ -1,4 +1,4 @@
-package common;
+package Test;
 
 import javafx.scene.image.Image;
 

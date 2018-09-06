@@ -1,9 +1,7 @@
-package common;
+package gui;
 
-public interface ImageLoader {
-	
+public interface Image {
 	public int getWidth();
 	public int getHeigh();
 	public String getName();
-	
 }

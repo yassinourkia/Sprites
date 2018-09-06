@@ -1,10 +1,12 @@
-package common;
+package javaFX;
 
-public class FXImage implements ImageLoader
+import gui.Image;
+
+public class FXImage implements Image
 {	
-	private ImageLoader imagefx;
+	private Image imagefx;
 	
-	public FXImage(ImageLoader imagefx)
+	public FXImage(Image imagefx)
 	{
 		this.imagefx = imagefx;
 	}

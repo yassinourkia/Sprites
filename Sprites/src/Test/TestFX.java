@@ -1,4 +1,4 @@
-package common;
+package Test;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -15,10 +15,10 @@ public class TestFX extends Application{
 	public void start(Stage pS) throws Exception {
 		// TODO Auto-generated method stub
 		Pane pane = new HBox(15);
-		pane.getChildren().add(new ImageView(Stub.getImage()));
+		pane.getChildren().add(new ImageView(TestFX.getImage()));
 		Scene scene = new Scene(pane,300,300);
 		
-		pS.setTitle("Sprite");
+		pS.setTitle("Sprites");
 		pS.setScene(scene);
 		pS.show();
 		
@@ -26,6 +26,10 @@ public class TestFX extends Application{
 	public static void main(String[] args) {
 		launch(args);
 	}
-	
+	public static Image getImage()
+	{
+		String URL = "http://www-ensibs.univ-ubs.fr/skins/ENSIBS/resources/img/logo.png";
+		return new javafx.scene.image.Image(URL);
+	}
 
 }
