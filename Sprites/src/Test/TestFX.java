@@ -21,7 +21,7 @@ public class TestFX extends Application{
 		pS.setTitle("Sprites");
 		pS.setScene(scene);
 		pS.show();
-		
+		System.out.print("d,fnf,");
 	}
 	public static void main(String[] args) {
 		launch(args);
